@@ -1,9 +1,9 @@
 {
-  "title": "My site",
+  "title": "GNS UI",
   "favicon": "image/favicon.ico",
   "themeConfig": {
     "navbar": {
-      "title": "My project",
+      "title": "GNS UI",
       "logo": "image/logo.png",
       "items": [
         {
@@ -16,7 +16,7 @@
     },
     "footer": {
       "logo": "image/logo.png",
-      "caption": "My project",
+      "caption": "GNS UI",
       "links": [
         {
           "title": "Product",
@@ -28,24 +28,6 @@
           ]
         }
       ],
-      "socials": [
-        {
-          "logo": "Twitter",
-          "href": "https://twitter.com/docuo_team"
-        },
-        {
-          "logo": "LinkedIn",
-          "href": "https://www.linkedin.com/company/spreadingai"
-        },
-        {
-          "logo": "Discord",
-          "href": "https://discord.gg/pgJFhUwzAU"
-        },
-        {
-          "logo": "Github",
-          "href": "https://github.com/spreadingai"
-        }
-      ]
     }
   }
 }
