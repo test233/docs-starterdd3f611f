@@ -28,7 +28,8 @@
           ]
         }
       ]
-    },
+    }
+  },
     "search": {
       "algolia": {
         "appId": "4TC1Z0S4I2",
@@ -36,5 +37,4 @@
         "indexName": "spreading--template-new"
       }
     }
-  }
 }
