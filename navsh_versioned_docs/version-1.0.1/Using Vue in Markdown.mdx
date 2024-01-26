@@ -134,11 +134,6 @@ Inside any Markdown file you can then directly use the components (names are inf
 <Foo-Bar/>
 ```
 
-<demo-1></demo-1>
-
-<OtherComponent/>
-
-<Foo-Bar/>
 
  warning IMPORTANT
 Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.
@@ -147,11 +142,6 @@ Make sure a custom component’s name either contains a hyphen or is in PascalCa
 ### Using Components In Headers 001
 
 You can use Vue components in the headers, but note the difference between the following syntaxes:
-
-| Markdown | Output HTML | Parsed Header |
-|--------|-------------|----------------|
-| <pre v-pre><code> # text &lt;Tag/&gt; </code></pre> | `<h1>text <Tag/></h1>` | `text` |
-| <pre v-pre><code> # text \`&lt;Tag/&gt;\` </code></pre> | `<h1>text <code>&lt;Tag/&gt;</code></h1>` | `text <Tag/>` |
 
 The HTML wrapped by `<code>` will be displayed as-is; only the HTML that is **not** wrapped will be parsed by Vue.
 
@@ -198,7 +188,7 @@ Sometimes you may need to apply some JavaScript or CSS only to the current page.
 
 ### OutboundLink  001
 
-The indicator <OutboundLink/> is used to denote external links. In VuePress, this component has been followed by every external link.
+The indicator 
 
 ### ClientOnly 001
 
