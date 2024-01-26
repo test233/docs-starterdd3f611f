@@ -110,30 +110,21 @@ By default, fenced code blocks are automatically wrapped with `v-pre`. To displa
 **Input**
 
 ``` md
-::: v-pre
+ v-pre
 `{{ This will be displayed as-is }}`
-:::
+
 ```
 
 **Output**
 
-::: v-pre
+ v-pre
 `{{ This will be displayed as-is }}`
-:::
+
 
 ## Using Components 001
 
 Any `*.vue` files found in `.vuepress/components` are automatically registered as [global](https://vuejs.org/v2/guide/components-registration.html#Global-Registration), [async](https://vuejs.org/v2/guide/components-dynamic-async.html#Async-Components) components. For example:
 
-```
-.
-└─ .vuepress
-   └─ components
-      ├─ demo-1.vue
-      ├─ OtherComponent.vue
-      └─ Foo
-         └─ Bar.vue
-```
 
 Inside any Markdown file you can then directly use the components (names are inferred from filenames):
 
@@ -149,9 +140,9 @@ Inside any Markdown file you can then directly use the components (names are inf
 
 <Foo-Bar/>
 
-::: warning IMPORTANT
+ warning IMPORTANT
 Make sure a custom component’s name either contains a hyphen or is in PascalCase. Otherwise it will be treated as an inline element and wrapped inside a `<p>` tag, which will lead to hydration mismatch because `<p>` does not allow block elements to be placed inside it.
-:::
+
 
 ### Using Components In Headers 001
 
@@ -164,10 +155,10 @@ You can use Vue components in the headers, but note the difference between the f
 
 The HTML wrapped by `<code>` will be displayed as-is; only the HTML that is **not** wrapped will be parsed by Vue.
 
-::: tip
+ tip
 
 The output HTML is accomplished by [markdown-it](https://github.com/markdown-it/markdown-it), while the parsed headers are handled by VuePress (and used for both the [sidebar](../theme/default-theme-config.md#sidebar) and document title).
-:::
+
 
 ## Using Pre-processors 001
 
@@ -192,11 +183,11 @@ Using `<template lang="pug">` requires installing `pug` and `pug-plain-loader`:
 yarn add -D pug pug-plain-loader
 ```
 
-::: tip
+ tip
 If you are a Stylus user, you don’t need to install `stylus` and `stylus-loader` in your project; VuePress uses Stylus internally.
 
 For pre-processors that do not have built-in webpack config support, you will need to [extend the internal webpack config](../config/README.md#configurewebpack) and install the necessary dependencies.
-:::
+
 
 ## Script & Style Hoisting 001
 
