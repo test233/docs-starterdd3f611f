@@ -28,6 +28,13 @@
           ]
         }
       ]
+    },
+    "search": {
+      "algolia": {
+        "appId": "4TC1Z0S4I2",
+        "apiKey": "4931865248d4ed6ec59dc60f3db682ef",
+        "indexName": "spreading--template-new"
+      }
     }
   }
 }
