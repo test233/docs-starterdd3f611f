@@ -25,6 +25,12 @@
           "sidebarIds": ["mySidebar"],
           "label": "Documentation",
           "position": "left"
+        },
+        {
+          "type": "docsVersionDropdown"
+        },
+        {
+          "type": "docsInstanceDropdown"
         }
       ]
     },
